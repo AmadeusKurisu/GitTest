@@ -84,4 +84,4 @@ if __name__ == '__main__':
         'Referer': 'https://www.bilibili.com/',
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
     }
-    get_mp3('https://www.bilibili.com/video/BV1XK4y147gU')
+    get_mp3('https://www.bilibili.com/video/BV1iY41147zz')
