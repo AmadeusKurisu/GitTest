@@ -46,7 +46,7 @@ def get_mp3(url_):
     title = tree.xpath('//*[@id="viewbox_report"]/h1/span/text()')[0] # 获取标题
     volume_url = list_json['data']['dash']['audio'][0]['baseUrl']
     print(volume_url)
-    PATH = 'E:/音乐/' + title + '.mp3'#保存路径
+    PATH = './' + title + '.mp3'#保存路径
     audio = requests.get(url=volume_url, headers=headers).content
     with open(PATH, 'wb') as f:
         f.write(audio)
@@ -84,4 +84,4 @@ if __name__ == '__main__':
         'Referer': 'https://www.bilibili.com/',
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
     }
-    get_mp3('https://www.bilibili.com/video/BV1iY41147zz')
+    get_mp3('https://www.bilibili.com/video/BV1Cs411m7RN?spm_id_from=333.999.0.0')
