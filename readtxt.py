@@ -1,7 +1,12 @@
-print("dfsdf")
+
+list=[]
 
 with open("./url.txt",'r')as f:
-    data=f.read()
-    print(data)
+    for line in f.readlines():
+        line=line.strip('\n')
+        list.append(line)
 
-print("dfsdf")
+
+
+
+
